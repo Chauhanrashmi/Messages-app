@@ -5,11 +5,10 @@
         {{post.title}}
       </mat-panel-title>
       <mat-panel-description>
-
       </mat-panel-description>
     </mat-expansion-panel-header>
     <p>{{post.content}}</p>
-    <p class="post-content">{{post.description}}</p>
+    <!-- <p class="post-content">{{post.description}}</p> -->
   </mat-expansion-panel>
 </mat-accordion>
 <p *ngIf="posts.length<=0" class="no-post">No posts yet</p>

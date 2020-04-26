@@ -1,14 +1,35 @@
-<form class="post-form">
+<div class="post-form">
     <mat-card>
+    <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field class="post-full-width">
+      <input
+       matInput
+
+       name="title"
+       ngModel required
+       #title="ngModel">
+       <mat-error *ngIf="title.invalid">
+        Title is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
    <mat-form-field class="post-full-width">
-    <textarea matInput rows="3" [(ngModel)]="enteredValue" ></textarea>
+    <textarea
+    matInput
+    rows="3"
+    name="content"
+    ngModel required
+    #content="ngModel"></textarea>
+    <mat-error *ngIf="content.invalid">
+      Post Content is <strong>required</strong>
+    </mat-error>
     </mat-form-field>
 
     <div class="post-button-row">
-      <button mat-raised-button color="primary" (click)="onAddPost()">Save</button>
+      <button mat-raised-button color="primary">Save</button>
     </div>
-    </mat-card>
   </form>
-<!-- <p>{{ newPost }}</p> -->
+    </mat-card>
+  </div>
+
 
 
