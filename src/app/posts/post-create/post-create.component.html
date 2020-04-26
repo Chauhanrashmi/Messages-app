@@ -1,0 +1,14 @@
+<form class="post-form">
+    <mat-card>
+   <mat-form-field class="post-full-width">
+    <textarea matInput rows="3" [(ngModel)]="enteredValue" ></textarea>
+    </mat-form-field>
+
+    <div class="post-button-row">
+      <button mat-raised-button color="primary" (click)="onAddPost()">Save</button>
+    </div>
+    </mat-card>
+  </form>
+<!-- <p>{{ newPost }}</p> -->
+
+
