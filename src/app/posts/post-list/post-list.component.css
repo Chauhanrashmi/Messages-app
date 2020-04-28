@@ -13,3 +13,13 @@
   font-weight: 500;
   color: grey;
 }
+.mat-expansion-panel-body {
+padding: 16px 24px 16px!important;
+}
+.mat-expansion-panel-header
+{
+  background: #0000ff45;
+}
+.content-body{
+  justify-content: left;
+}
