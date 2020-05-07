@@ -1,1 +1,13 @@
-<mat-toolbar color="primary"><mat-icon> insert_emoticon</mat-icon>  Inbox</mat-toolbar>
+<mat-toolbar color="primary"><mat-icon> insert_emoticon</mat-icon>
+  <span><a routerLink="/">Inbox</a></span>
+  <span class="spacer"></span>
+  <span class="links">
+  <ul>
+    <li>
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent">
+        <!-- <mat-icon>create</mat-icon> -->
+        Create New</a>
+    </li>
+  </ul>
+  </span>
+</mat-toolbar>

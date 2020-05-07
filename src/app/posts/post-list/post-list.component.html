@@ -11,9 +11,9 @@
     <p>{{post.content}}</p>
     </mat-action-row>
     <mat-action-row>
-      <button mat-fab color="primary">
+      <a mat-fab color="primary" [routerLink]="['/edit',post.id]">
         <mat-icon>create</mat-icon>
-      </button>
+      </a>
       <button mat-fab color="warn" (click)="onDelete(post.id)">
         <mat-icon>delete</mat-icon>
       </button>
