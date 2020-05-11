@@ -23,3 +23,8 @@ padding: 16px 24px 16px!important;
 .content-body{
   justify-content: left;
 }
+.mat-spinner{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
