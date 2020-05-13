@@ -21,3 +21,15 @@ mat-card{
   justify-content: center;
   margin: auto;
 }
+input[type=file]{
+  visibility: hidden;
+}
+.image-preview{
+  /* max-width: 8rem!important; */
+  margin: 1rem 0;
+  height: 5rem;
+  overflow: hidden;
+}
+.image-preview img{
+ height: 100%;
+}
