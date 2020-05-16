@@ -22,9 +22,25 @@ padding: 16px 24px 16px!important;
 }
 .content-body{
   justify-content: left;
+  display: block;
 }
 .mat-spinner{
   text-align: center;
   justify-content: center;
   margin: auto;
+}
+.post-image {
+  overflow: hidden;
+  width: 12rem;
+  height: auto;
+}
+
+.post-image img {
+ width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.mat-expansion-panel{
+  width: 45%;
+  margin: auto;
+  margin-bottom: 10px;
 }

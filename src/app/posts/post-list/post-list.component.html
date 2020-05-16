@@ -9,7 +9,11 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-action-row class="content-body">
-    <p>{{post.content}}</p>
+      <div class="post-image">
+        <img [src]="post.imagePath" [alt]="post.title">
+      </div>
+      <br>
+    <p class="caption">{{post.content}}</p>
     </mat-action-row>
     <mat-action-row>
       <a mat-fab color="primary" [routerLink]="['/edit',post.id]">
