@@ -1,0 +1,24 @@
+mat-card{
+  margin: auto;
+  background: #ffffff;
+  /* width: 50%; */
+}
+.signup-form {
+max-width: 100%;
+margin: auto;
+width: 100%;
+margin-top: 50px;
+}
+
+.post-full-width {
+width: 100%;
+}
+.post-button-row button,
+.post-button-row a {
+margin-right: 8px;
+}
+.mat-spinner{
+text-align: center;
+justify-content: center;
+margin: auto;
+}
